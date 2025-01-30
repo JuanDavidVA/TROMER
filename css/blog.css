@@ -1,0 +1,32 @@
+.div2 { grid-area: 1 / 1 / 2 / 8;
+    backdrop-filter:blur(7px);
+    box-shadow:2px 5px 13px #1fc250cc;
+    color: white;
+ }
+ 
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tromer-logo{
+    color: #64A850;
+    font-size:x-large;
+}
+
+.social-media{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: ;
+}
+
+.social-media img{
+    width: 30px;;
+    height: auto;
+    
+}
+.social-media .twitter-logo{
+    margin-top: 3px;
+}
