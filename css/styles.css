@@ -1,0 +1,19 @@
+body{
+    max-width: 100%;
+    margin: 0%;
+    background: linear-gradient(to right,#0b0c0b, #0b1a08c9, #161514c9, #0b1a08c9,#0f110f);
+}
+ 
+.parent {
+    display: grid;
+    grid-template-columns: 0.75fr repeat(2, 0.5fr) 5fr repeat(2, 0.5fr) 0.75fr;
+    grid-template-rows: 0.75fr repeat(3, 1fr) 0.75fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+  
+.div1 { grid-area: 2 / 4 / 5 / 5; }
+.div2 { grid-area: 1 / 1 / 2 / 8; }
+.div3 { grid-area: 2 / 2 / 5 / 3; }
+.div4 { grid-area: 2 / 6 / 5 / 7; }
+ div5 { grid-area: 5 / 1 / 6 / 8; }
