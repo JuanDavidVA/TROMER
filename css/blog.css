@@ -25,12 +25,12 @@
     --normal-fontsize: 19px;
     --title-fontsize: 50px;
     --mid-fontsize: 36px;
-
-    
 }
+
 *{
     scrollbar-width: none;
 }
+
 body{
     font-family: "Sora";
     max-width: 100%;
@@ -43,11 +43,10 @@ h1 {
 }
 
 
-
 .parent {
     display: grid;
     grid-template-columns: 0.50fr repeat(2, 0.17fr) 5fr repeat(2, 0.17fr) 0.50fr;   /*MODIFICACION: 0,75 -> 0,50 . y columnas a 0,2*/
-    grid-template-rows: 0.25fr 1fr 1fr 1fr repeat(3, 1fr) 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr repeat(3, 1fr) 1fr 1fr 0.50fr 1fr 1fr 0.75fr 1fr ;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     min-height: 100vh;
@@ -143,7 +142,6 @@ h1 {
     box-shadow:1px 1px 55px var(--c-Gradients-midBalck);
     transition: border-radius 0.5s;
 }
-
 .Pimagen:hover {
     border-radius: 20px;
 }
@@ -160,8 +158,6 @@ h1 {
     animation: humo 1s infinite;
 }
 .boton:hover {
-  /*background: linear-gradient(to right, var(--c-Gradients-gray), var(--c-Gradients-gray), var(--c-Gradients-gray), var(--c-orange));
-  */  
   box-shadow: 0px 0px 20px #ffffff;
     transform: scale(1.05);
 }
@@ -202,15 +198,14 @@ h1 {
     width: 100%;
     height: 100%;
 }
-
 .sinopsis-container {
     display: flex;
     gap: 100px;
     justify-content: center;
     align-items: center;
-    width: 100%;  /* Ajusta el ancho al 100% del contenedor padre */
-    height: 100%; /* Ajusta la altura al 100% del contenedor padre */
-    margin: 0; /* Opcional, elimina márgenes que puedan afectar el tamaño */
+    width: 100%; 
+    height: 100%; 
+    margin: 0;
 }
 .content-i {
     display: flex ;
@@ -239,9 +234,96 @@ h1 {
     text-shadow: 0px 0px 44px var(--c-orange) ;
 }
 
+
 .div1-4 { 
-    grid-area: 11 / 4 / 14 / 5; 
+    grid-area: 11 / 4 / 14 / 5;
+    justify-content: space-between;
+    align-items: center;
 }
+.container-Art {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.art-p {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--c-Gradients-BGren);
+    border-radius: 10px;
+    box-shadow: 1px 4px 25px var(--c-Gradients-FullBalck);
+    transition: background 0.3s ease-in-out;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+#dynamic-text {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify ;
+    font-size: var(--normal-fontsize);
+    text-shadow: 1px 1px 8px var(--c-orange);
+}
+.content-carusel {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.image-container1 {
+    display: flex ;
+    gap: 100px;
+    justify-content: center; 
+    align-items: center;
+    width: 120px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 4px 25px var(--c-Gradients-FullBalck);
+}
+.image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-container1:hover {
+    width: 700px;
+    height: 480px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.image-container1:not(:hover) {
+    width: 100px;
+    height: 480px;
+}
+.image-container1:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900;
+    height: 500;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+.div1-4 h3 {
+    color:var(--c-orange) ;
+    font-size: var(--title-fontsize);
+    text-shadow: 1px 1px 8px var(--c-orange);
+    margin: 45px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 
 /* footer*/
 .div5 { grid-area: 15 / 1 / 14 / 10; /*el valor 1 especifica la columna de finalizacion el valor4 la columna de inicio */
@@ -277,7 +359,6 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 40%;
 }
-
 .red:hover {
     transform: scale(1.2);
     box-shadow: 0px 0px 44px var(--c-orange) ;
@@ -288,6 +369,7 @@ h1 {
     height: 1px;
     overflow: hidden;
 }
+
 .div6 { grid-area: 16 / 1 / 15 / 10;
     height: 70px; 
     box-shadow: 2px 2px 73px var(--c-ligthGreen);
@@ -304,21 +386,33 @@ h1 {
     text-align: center; 
 }
 
+
 @media (max-width: 1024px) {
     .parent {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-row-gap: 20px; 
     }
+
     .div1 { 
         grid-area: 2 / 4 / 5 / 5; 
     }
+
     .div1-2 { 
         grid-area: 5 / 4 / 8 / 5; 
     }
+
+    .div1-3 { 
+        grid-area: 8 / 4 / 11 / 5; 
+    }
+
+    .div1-4 { 
+        grid-area: 11 / 4 / 14 / 5;    
+    }
     .div2 { grid-area: 1 / 1 / 2 / 8;}
-    .div5 { grid-area: 9 / 1 / 8 / 8;}
-    .div6 { grid-area: 9 / 1 / 9 / 9;}
+    .div5 {  grid-area: 15 / 1 / 14 / 10;}
+    .div6 { grid-area: 16 / 1 / 15 / 10;}
+  
     .div3, .div4 {
         display: none;
     }
@@ -348,12 +442,57 @@ h1 {
         font-size: var(--normal-fontsize);
         text-align: justify;
     }
+    .sinopsis-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+        gap: 10px;
+        margin: 3%;
+        flex-wrap: wrap;
+    }
+    .content-i {
+        width: 95%;
+        height: auto;
+        margin: 0;
+    }
+    #video {
+        width: 80%;
+    }
+    .content-i p {
+        width: 75%;
+       
+    }
+
+
+    .container-Art {
+        flex-direction: column; 
+        align-items: center;
+        gap: 30px;
+    }
+    .content-carusel {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .image-container1:not(:hover) {
+        width: 30px;
+        height: 380px;
+    }
+    .image-container1:hover {
+        width: 280px;
+        height: 200px;
+    }
+    .art-p {
+        width: 90%;
+        font-size: 16px;
+    }
 
 
     .image-container {
         flex-direction: column;
         gap: 10px;
-        margin: 3%;
+        margin: 4%;
         flex-wrap: wrap;
     }
     .Pimagen {
