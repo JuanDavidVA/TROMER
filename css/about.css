@@ -70,6 +70,21 @@ h1 {
     margin-right: 0%;
     margin-top: 10%;
     border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+    animation: humo 2s infinite;
+}
+
+
+@keyframes humo {
+    0% {
+        box-shadow: 1px 1px 22px var(--c-orange), 0 0 10px rgb(255, 243, 243);
+    }
+    50% {
+        box-shadow: 1px 1px 22px var(--c-orange), 0 0 50px rgb(255, 255, 255);
+    }
+    100% {
+        box-shadow: 1px 1px 22px var(--c-orange), 0 0 10px rgba(255, 255, 255, 0.5);
+    }
 }
 
 .about-me{
@@ -80,10 +95,16 @@ h1 {
 .about-me h2{
     margin-left: 30%;
     font-family: var(--titles-font);
+    color: white;
+    text-shadow: 1px 1px 9px var(--c-orange);
+
 }
 
 .about-me p{
     margin-left: 30%;
+    color: white;
+    text-align: justify;
+    text-shadow: 1px 1px 9px var(--c-orange);
 }
 
 /* content div: se modifica en un css diferente */   
@@ -455,3 +476,4 @@ h1 {
     background: #ff7a01;
     color: #001925;
 }
+
