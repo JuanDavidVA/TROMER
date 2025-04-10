@@ -19,22 +19,28 @@
             </div>
 </div>
 
-<div class="div1-2">
+<div class="div1-2" id="div1-2">
     <div class="description-container">
-        <h1>Reseñas y Contacto</h1>
+        <h1>Reseña</h1>
     </div>
     <div class="reseña-container">
         <div class="reseña">
-                <span class="heading"></span>
+            <span class="heading"></span>
+            <form action="">
                 <input placeholder="Nombre" type="text" class="input">
-                <input placeholder="Email" id="mail" type="email" class="input">
                 <textarea placeholder="Escríbe tu reseña" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
                 <div class="button-container">
-                    <div class="send-button">Enviar</div>
+                    <button class="send-button">Enviar</button>
+                    
                     <div class="reset-button-container">
-                        <div id="reset-btn" class="reset-button">Reiniciar</div>
+                        <button id="reset-btn" class="reset-button">Reiniciar</button>
                     </div>
+
                 </div>
+            </form>
+        </div>
+        <div class="change-form-button">
+            <button type="submit" class="change-button" id="change-button">></button>
         </div>
     </div>
 </div>
@@ -77,5 +83,6 @@
     <p class="text-sm">&copy; 2025 TROMER. Todos los derechos reservados.</p>
 </div>
 </div>   
+<script type="module" src="/AboutJS/about.js"></script>
 </body>
 </html>
