@@ -65,7 +65,7 @@ h1 {
 .hero img {
     width: 32%;
     height: auto;
-    margin:  14%;
+    margin:  13%;
     border-radius: 50%;
     box-shadow: 1px 1px 48px var(--c-orange);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -74,6 +74,19 @@ h1 {
 .hero img:hover {
     transform: scale(1.2);
     text-shadow: 0px 0px 44px var(--c-orange);
+}
+
+.download{
+    text-decoration: none;
+    font-size: 28px;
+    background: linear-gradient(to right,var(--c-orange), var(--c-Gradients-gray), var(--c-Gradients-gray),var(--c-Gradients-gray) );
+    box-shadow:1px 1px 12px var(--c-orange);
+    text-shadow: 2px 2px 15px var(--c-Gradients-FullBalck);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: var(--c-orange);
+    transition: all 0.3s ease-in-out;
+    animation: humo 2s infinite;
 }
 
 @keyframes humo {
@@ -106,7 +119,7 @@ h1 {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.description-container h1:hover {
+.description-container :hover {
     transform: scale(1.2);
     text-shadow: 0px 0px 44px var(--c-orange) ;
 }
@@ -128,6 +141,12 @@ h1 {
     margin-bottom: 70px;
 }
 .content-i {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.content-boton{
     display: flex ;
     flex-direction: column;
     justify-content: center; 
@@ -155,14 +174,11 @@ h1 {
     padding: 10px 20px;
     border-radius: 8px;
     color: var(--c-orange);
-    transition: all 0.7s ease-in-out;
+    transition: all 0.2s ease-in-out;
     animation: humo 1s infinite;
 }
 .boton:hover {
-  /*background: linear-gradient(to right, var(--c-Gradients-gray), var(--c-Gradients-gray), var(--c-Gradients-gray), var(--c-orange));
-  */  
-  box-shadow: 0px 0px 20px #ffffff;
-    transform: scale(1.05);
+    transform: scale(1.3);
 }
 
 
