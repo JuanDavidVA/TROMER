@@ -1,12 +1,12 @@
 const api_url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification";
-const token = "pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS"
+const token = "xwjZjJrd7M9kJZUZxkJ3F5gxNCNGGXAgmrrtzFpPcilL2YKFluCj5Cm5np41"
 
-const rankingTable = document.getElementById("ranking");
+const rowTable = document.getElementById("ranking");
 
 
 async function getAllUsers() {
     try {
-        const answer = await fetch("https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS");
+        const answer = await fetch("https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/" + token);
         const data = await answer.json();
         return data.data;
     }catch 
@@ -17,11 +17,25 @@ async function getAllUsers() {
 
 
 function drawRanking() {
-    let users = getAllUsers();
+    let users =  getAllUsers().then(valor => {
+        
+        for (let index = 0; index < valor.length; index++) {
 
-    console.log(users)
+            rowTable.innerHTML += `
+                <tr>
+                    <td>${valor[index].name}</td>
+                    <td>${valor[index].puntuacion}</td>  
+                </tr>
+            `
+        }
+
+
+    
+    });
     
   
 }
+
+
 
 drawRanking();
