@@ -20,29 +20,68 @@
 </div>
 
 <div class="div1-2" id="div1-2">
+    
     <div class="description-container">
         <h1>Reseña</h1>
     </div>
-    <div class="reseña-container">
-        <div class="reseña">
-            <span class="heading"></span>
-            <form action="">
-                <input placeholder="Nombre" type="text" class="input">
-                <textarea placeholder="Escríbe tu reseña" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
-                <div class="button-container">
-                    <button class="send-button">Enviar</button>
-                    
-                    <div class="reset-button-container">
-                        <button id="reset-btn" class="reset-button">Reiniciar</button>
-                    </div>
 
-                </div>
+        <div class="form-container-active">
+            
+            <div class="change-form-button-left">
+                <button type="submit" class="change-button-left" id="change-button-left"><</button>
+            </div>
+            <div class="reseña">
+                <span class="heading"></span>
+                <form action="">
+                    <input placeholder="Nombre" type="text" class="input">
+                    <textarea placeholder="Escríbe tu reseña" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                        <button class="send-button-reseña">Enviar</button> 
+                        <div class="reset-button-container">
+                            <button id="reset-btn" class="reset-button">Reiniciar</button>
+                        </div>
+                    </div>
+            </div>
             </form>
+            <div class="change-form-button-right">
+                <button type="submit" class="change-button-right" id="change-button-right">></button>
+            </div>
         </div>
-        <div class="change-form-button">
-            <button type="submit" class="change-button" id="change-button">></button>
+        
+        <div class="form-container">    
+            <div class="change-form-button-left">
+                <button type="submit" class="change-button-left" id="change-button-left"><</button>
+            </div>
+            <div class="reseña">
+                <span class="heading"></span>
+                <form action="" class="contact-form">
+                    <input placeholder="Nombre" id="nombre-contacto" type="text" class="input">
+                    <input placeholder="Email" id="mail-contacto" type="email" class="input">
+                    <input placeholder="Asunto" id="asunto-contacto" type="text" class="input">
+                    <textarea placeholder="Escríbe tu mensaje" rows="10" cols="30" id="mensaje-contacto" name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                        <button class="send-button-contacto">Enviar</button>
+                        <div class="reset-button-container">
+                            <button id="reset-btn" class="reset-button">Reiniciar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="change-form-button-right">
+                <button type="button" id="change-button-right" class="change-button-right">></button>
+            </div>
         </div>
+
+    </form>
+
+    <!-- Lista de Comentarios -->
+    <div class="comment-list" id="comment-list">
+        <h3>Comentarios:</h3>
+        <ul id="comments-ul">
+            <!-- Aquí se irán agregando los comentarios -->
+        </ul>
     </div>
+
 </div>
 
 <div class="div2">
