@@ -5,9 +5,14 @@ let descriptions = [
 ];
 
 function changeText(index) {
+    if (index < 0 || index >= descriptions.length) return;
+
     document.getElementById("dynamic-text").textContent = descriptions[index];
 
-    document.querySelectorAll(".image-container").forEach(img => img.classList.remove("active"));
+    const containers = document.querySelectorAll(".image-container");
+    containers.forEach(img => img.classList.remove("active"));
 
-    document.querySelectorAll(".image-container")[index].classList.add("active");
+    if (containers[index]) {
+        containers[index].classList.add("active");
+    }
 }

@@ -386,6 +386,24 @@ h1 {
     text-align: center; 
 }
 
+.div-users{
+    padding: 20px;
+    margin: 20px;
+    width: 900;
+    height: 500;
+    background: rgba(254, 254, 254, 0.449);
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.div-users h5{
+    font-size: 19px;
+    text-shadow: 1px 1px 17px black;
+}
+.div-users p{
+    font-size: 15px;
+    text-shadow: 1px 1px 17px black;
+}
+
 
 @media (max-width: 1024px) {
     .parent {
