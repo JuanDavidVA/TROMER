@@ -17,6 +17,7 @@ async function getAllUsers() {
 
 
 function drawRanking() {
+    rowTable.innerHTML = '';
     let users =  getAllUsers().then(valor => {
         
         for (let index = 0; index < valor.length; index++) {
@@ -28,14 +29,16 @@ function drawRanking() {
                 </tr>
             `
         }
-
-
     
     });
-    
   
 }
 
 
+window.addEventListener('load', function() {
 
-drawRanking();
+    var fetchInterval = 300000; // 5 minutes
+
+    drawRanking();
+    setInterval(drawRanking,fetchInterval);
+})
