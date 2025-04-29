@@ -191,7 +191,8 @@ h1 {
     align-items: center;
     font-size: var(--normal-fontsize);
 }
-.logo{
+.logo a {
+    text-decoration: none;
     font-family: 'LemonMilk';
     color: var(--c-SligthGreen) ;
     font-size: var(--mid-fontsize);

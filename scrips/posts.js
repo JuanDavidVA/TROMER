@@ -14,6 +14,13 @@ async function getPost() {
 function drawPost() {
     getPost().then(posts => {
         let listaPost = document.getElementById("post-list");
+        let divPost = document.getElementById("post-list");
+        divPost.innerHTML = ` <h3>Posts del Autor </h3>`;
+        
+        if(posts.length == 0 ){
+            divPost.innerHTML = "";
+        }
+
 
         posts.forEach(post => {
             let divUser = document.createElement("div");
