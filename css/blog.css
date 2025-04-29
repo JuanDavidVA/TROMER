@@ -351,6 +351,7 @@ h1 {
     font-size: var(--mid-fontsize);
     margin: 12px;
     margin-left: 20px; 
+    font-family: 'LemonMilk';
 }
 .red {
     width: 36px;
