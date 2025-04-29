@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const apiToken = 'pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS'; // reemplaza por tu token real
+    const apiToken = 'xwjZjJrd7M9kJZUZxkJ3F5gxNCNGGXAgmrrtzFpPcilL2YKFluCj5Cm5np41'; 
     cargarComentarios(apiToken);
 });
 
@@ -100,7 +100,7 @@ async function enviarReseña(apiToken, nombre, contenido) {
 
 document.querySelector('.send-button-reseña').addEventListener('click', (e) => {
     e.preventDefault();
-    const token = 'pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS';
+    const token = 'xwjZjJrd7M9kJZUZxkJ3F5gxNCNGGXAgmrrtzFpPcilL2YKFluCj5Cm5np41';
     const nombre = document.querySelector('.reseña input').value;
     const contenido = document.querySelector('.reseña textarea').value;
     enviarReseña(token, nombre, contenido);
@@ -141,7 +141,7 @@ async function enviarContacto(apiToken, nombre, email, asunto, mensaje) {
 
 document.querySelector('.send-button-contacto').addEventListener('click', (e) => {
     e.preventDefault();
-    const token = 'pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS';
+    const token = 'xwjZjJrd7M9kJZUZxkJ3F5gxNCNGGXAgmrrtzFpPcilL2YKFluCj5Cm5np41';
     const nombre = document.getElementById('nombre-contacto').value;
     const email = document.getElementById('mail-contacto').value;
     const asunto = document.getElementById('asunto-contacto').value;
