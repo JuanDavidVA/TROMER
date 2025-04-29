@@ -37,10 +37,14 @@ body{
     background: linear-gradient(to right,var(--c-Gradients-BlackGren), var(--c-Gradients-gren), var(--c-Gradients-Black), var(--c-Gradients-gren),var(--c-Gradients-BGren));
 }
 
-h1 {
+.tabla-container h1 {
+    
+    
     font-family: 'LemonMilk';
     color: var(--c-orange);
     text-align: center;
+    
+    
 }
 
 table {
@@ -49,7 +53,8 @@ table {
     width: 90%;
     border-collapse: collapse;
     text-align: left;
-   
+    box-sizing: border-box;
+
 }
 
 th, td {
