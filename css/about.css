@@ -46,7 +46,7 @@ h1 {
 .parent {
     display: grid;
     grid-template-columns: 0.50fr repeat(2, 0.17fr) 5fr repeat(2, 0.17fr) 0.50fr;   /*MODIFICACION: 0,75 -> 0,50 . y columnas a 0,2*/
-    grid-template-rows: 0.25fr 1fr 1fr 1fr repeat(3, 1fr)  0.57fr 0.12fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr repeat(3, 1fr)  0.57fr 0.;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     min-height: 100vh;
@@ -131,7 +131,6 @@ h1 {
 
 .description-container p {
     color: white;
-    margin-left: 260px;
     margin-right: 260px;
     text-align: justify ;
     font-size: var(--normal-fontsize);
@@ -381,13 +380,58 @@ h1 {
     color: #ff7a01;
 }
 
-.reseña-container {
+.form-container-active {
     max-width: auto;
     margin: 30px;
     background-color: #00000053;
     padding: 30px;
     border-left: 5px solid #ff7a01;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    display: flex;
+}
+
+.change-form-button-left{
+    padding-top: 150px;
+    padding-right: 40px;
+}
+
+.change-form-button-left .change-button-left{
+    border-radius: 50%;
+    background: #ff7a01;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    font-size: large;
+}
+
+.change-form-button-left .change-button-left:hover{
+    background: transparent;
+    border: 1px solid #ff7a01;
+    color: #ff7a01;
+}
+
+.change-form-button-right{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.change-form-button-right .change-button-right{
+    border-radius: 50%;
+    background: #ff7a01;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    font-size: large;
+}
+
+.change-form-button-right .change-button-right:hover{
+    background: transparent;
+    border: 1px solid #ff7a01;
+    color: #ff7a01;
+}
+
+.reseña{
+    width: 95%;
 }
 
 .heading {
@@ -398,7 +442,7 @@ h1 {
     margin-bottom: 20px;
     }
 
-.reseña-container .reseña .input {
+.form-container-active .reseña .input {
     color: #87a4b6;
     width: 100%;
     background-color: #ffffff24;
@@ -411,11 +455,11 @@ h1 {
     border-left: 1px solid transparent;
 }
 
-.reseña-container .reseña .input:focus {
+.form-container-active .reseña .input:focus {
     border-left: 5px solid #ff7a01;
 }
 
-.reseña-container .reseña .textarea {
+.form-container-active .reseña .textarea {
     width: 100%;
     padding: 10px;
     border: none;
@@ -430,16 +474,16 @@ h1 {
     transition: all 0.2s ease-in-out;
 }
 
-.reseña-container .reseña .textarea:focus {
+.form-container-active .reseña .textarea:focus {
     border-left: 5px solid #ff7a01;
 }
 
-.reseña-container .reseña .button-container {
+.form-container-active .reseña .button-container {
     display: flex;
     gap: 10px;
 }
 
-.reseña-container .reseña .button-container .send-button {
+.form-container-active .reseña .button-container .send-button-contacto {
     flex-basis: 70%;
     background: #ff7a01;
     padding: 10px;
@@ -450,21 +494,39 @@ h1 {
     transition: all 0.2s ease-in-out;
 }
 
-.reseña-container .reseña .button-container .send-button:hover {
+.form-container-active .reseña .button-container .send-button-contacto:hover {
     background: transparent;
     border: 1px solid #ff7a01;
     color: #ff7a01;
 }
 
-.reseña-container .reseña .button-container .reset-button-container {
+.form-container-active .reseña .button-container .send-button-reseña {
+    flex-basis: 70%;
+    background: #ff7a01;
+    padding: 10px;
+    color: #001925;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container-active .reseña .button-container .send-button-reseña:hover {
+    background: transparent;
+    border: 1px solid #ff7a01;
+    color: #ff7a01;
+}
+
+.form-container-active .reseña .button-container .reset-button-container {
     filter: drop-shadow(1px 1px 0px #ff7a01);
     flex-basis: 30%;
 }
 
-.reseña-container .reseña .button-container .reset-button-container .reset-button {
+.form-container-active .reseña .button-container .reset-button-container .reset-button {
     position: relative;
     text-align: center;
     padding: 10px;
+    padding-right: 70%;
     color: #ff7a01;
     font-weight: bold;
     background: transparent;
@@ -472,8 +534,53 @@ h1 {
     transition: all 0.2s ease-in-out;
 }
 
-.reseña-container .reseña .button-container .reset-button-container .reset-button:hover {
+.form-container-active .reseña .button-container .reset-button-container .reset-button:hover {
     background: #ff7a01;
     color: #001925;
 }
 
+.form-container{
+    display: none;
+    max-width: auto;
+    margin: 30px;
+    background-color: #00000053;
+    padding: 30px;
+    border-left: 5px solid #ff7a01;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.comment-list {
+    margin: 30px;
+    margin-right: 35px;
+    padding: 20px;
+    background: linear-gradient(to right, #1f1f1f, #2b2b2b);
+    border: 2px solid #ff8000;
+    border-radius: 10px;
+    color: #f5f5f5;
+    box-shadow: 0 0 10px #ff8000aa;
+    }
+
+.comment-list h3 {
+    font-size: 20px;
+    color: #ff8000;
+    text-shadow: 0 0 5px #ff8000;
+    margin-bottom: 15px;
+}
+
+.comment-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comment-list li {
+    background-color: #1a1a1a;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-left: 3px solid #ff8000;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(255, 128, 0, 0.2);
+}
+
+.comment-list li strong {
+    color: #ff8000;
+}
