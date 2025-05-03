@@ -151,6 +151,7 @@ h1 {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+    margin-bottom: 70px;
 }
 .Pimagen {
     width: 100%;
@@ -182,7 +183,6 @@ h1 {
 }
 
 
-/* initial nav*/
 .div2 { grid-area: 1 / 1 / 2 / 8;   
     box-shadow:2px 5px 1px var(--c-ligthGreen);
     display: flex;

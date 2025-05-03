@@ -189,14 +189,12 @@ th {
     animation: humo 1s infinite;
 }
 .boton:hover {
-  /*background: linear-gradient(to right, var(--c-Gradients-gray), var(--c-Gradients-gray), var(--c-Gradients-gray), var(--c-orange));
-  */  
+  
   box-shadow: 0px 0px 20px #ffffff;
     transform: scale(1.05);
 }
 
 
-/* initial nav*/
 .div2 { grid-area: 1 / 1 / 2 / 8;   
     box-shadow:2px 5px 1px var(--c-ligthGreen);
     display: flex;
@@ -214,20 +212,17 @@ th {
 }
 
 
-/* stetic colimn 1 */
-.div3 { grid-area: 2 / 2 / 8 / 3; /*para modificar el largo de la coliumna variar el primer y el 3 valor*/
+.div3 { grid-area: 2 / 2 / 8 / 3; 
     background: var(--c-ligthGreen);
     box-shadow:2px 2px 23px var(--c-ligthGreen);
 }
- /* stetic colimn 1 */
-.div4 { grid-area: 2 / 6 / 8 / 7; /*para modificar el largo de la coliumna variar el primer y el 3 valor*/
+.div4 { grid-area: 2 / 6 / 8 / 7; 
     background: var(--c-ligthGreen);
     box-shadow:2px 2px 23px var(--c-ligthGreen); 
 }
 
 
-/* footer*/
-.div5 { grid-area: 9 / 1 / 8 / 8; /*el valor 1 especifica la columna de finalizacion el valor4 la columna de inicio */
+.div5 { grid-area: 9 / 1 / 8 / 8; 
     box-shadow: 2px 2px 23px var(--c-ligthGreen);
 }
 .content-footer {

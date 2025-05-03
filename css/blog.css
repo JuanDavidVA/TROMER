@@ -19,7 +19,7 @@
     --c-Gradients-BGren:#0f110f;
     
     --c-Gradients-FullBalck:#000000;
-    --c-Gradients-midBalck:#0c0c0b; /*2 gradientes, en body y boton*/
+    --c-Gradients-midBalck:#0c0c0b; 
     --c-Gradients-gray:#333333; 
     
     --normal-fontsize: 19px;
@@ -45,7 +45,7 @@ h1 {
 
 .parent {
     display: grid;
-    grid-template-columns: 0.50fr repeat(2, 0.17fr) 5fr repeat(2, 0.17fr) 0.50fr;   /*MODIFICACION: 0,75 -> 0,50 . y columnas a 0,2*/
+    grid-template-columns: 0.50fr repeat(2, 0.17fr) 5fr repeat(2, 0.17fr) 0.50fr;   
     grid-template-rows: 0.25fr 1fr 1fr 1fr repeat(3, 1fr) 1fr 1fr 0.50fr 1fr 1fr 0.75fr 1fr ;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -53,7 +53,6 @@ h1 {
 }
 
 
-/* content div: se modifica en un css diferente */   
 .div1 { 
     grid-area: 2 / 4 / 5 / 5; 
 }
@@ -89,7 +88,6 @@ h1 {
 }
 
 
-/* content div: se modifica en un css diferente */   
 .div1-2 { 
     grid-area: 5 / 4 / 8 / 5; 
 }
@@ -181,13 +179,11 @@ h1 {
 }
 
 
-/* stetic colimn 1 */
-.div3 { grid-area: 2 / 2 / 14 / 3; /*para modificar el largo de la coliumna variar el primer y el 3 valor*/
+.div3 { grid-area: 2 / 2 / 14 / 3; 
     background: var(--c-ligthGreen);
     box-shadow:2px 2px 23px var(--c-ligthGreen);
 }
- /* stetic colimn 1 */
-.div4 { grid-area: 2 / 6 / 14 / 7; /*para modificar el largo de la coliumna variar el primer y el 3 valor*/
+.div4 { grid-area: 2 / 6 / 14 / 7; 
     background: var(--c-ligthGreen);
     box-shadow:2px 2px 23px var(--c-ligthGreen); 
 }
@@ -326,8 +322,7 @@ h1 {
 
 
 
-/* footer*/
-.div5 { grid-area: 15 / 1 / 14 / 10; /*el valor 1 especifica la columna de finalizacion el valor4 la columna de inicio */
+.div5 { grid-area: 15 / 1 / 14 / 10;
     box-shadow: 2px 2px 23px var(--c-ligthGreen);
 }
 .content-footer {
