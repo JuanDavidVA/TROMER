@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Sora';
-    src: url('fonts/Sora-Regular.ttf');
+    src: url('/TROMER/fonts/Sora-Regular.ttf');
 }
 
 @font-face {
     font-family: 'LemonMilk';
-    src: url('fonts/LEMONMILK-Bold.otf');
+    src: url('/TROMER/fonts/LEMONMILK-Bold.otf');
 }
 
 :root { /*Colors Vars*/
