@@ -166,6 +166,22 @@ h1 {
 .Pimagen:hover {
     border-radius: 20px;
 }
+.Pimagen2 {
+    width: 600px;
+    height: auto;
+    margin: 2%;
+    margin-bottom: 6%;
+    border-radius: 0%;
+    box-shadow:1px 1px 55px var(--c-Gradients-midBalck);
+    transition: border-radius 0.5s;
+}
+
+.Pimagen:hover {
+    border-radius: 20px;
+}
+
+
+
 .boton{
     text-decoration: none;
     font-size: var(--normal-fontsize);
