@@ -167,7 +167,7 @@ h1 {
     border-radius: 20px;
 }
 .Pimagen2 {
-    width: 600px;
+    width: 700px;
     height: auto;
     margin: 2%;
     margin-bottom: 6%;
@@ -176,7 +176,7 @@ h1 {
     transition: border-radius 0.5s;
 }
 
-.Pimagen:hover {
+.Pimagen2:hover {
     border-radius: 20px;
 }
 
@@ -346,6 +346,11 @@ h1 {
         height: auto;
         margin: 0;
         
+    }
+    .Pimagen2 {
+        width: 300px;
+        height: auto;
+        margin: 2%;
     }
     .boton {
         font-size: var(--normal-fontsize);
