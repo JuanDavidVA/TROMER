@@ -65,7 +65,7 @@ h1 {
 .hero img {
     width: 32%;
     height: auto;
-    margin:  12%;
+    margin:  10%;
     border-radius: 50%;
     box-shadow: 1px 1px 48px var(--c-orange);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
