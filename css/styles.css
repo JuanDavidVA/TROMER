@@ -46,7 +46,7 @@ h1 {
 .parent {
     display: grid;
     grid-template-columns: 0.50fr repeat(2, 0.17fr) 5fr repeat(2, 0.17fr) 0.50fr;   /*MODIFICACION: 0,75 -> 0,50 . y columnas a 0,2*/
-    grid-template-rows: 0.11fr 0.2fr 1fr 1fr repeat(3, 1fr)  0.57fr 0.12fr;
+    grid-template-rows: 0.10fr 0.1fr 1fr 1fr repeat(3, 1fr)  0.57fr 0.12fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     min-height: 100vh;
@@ -65,7 +65,7 @@ h1 {
 .hero img {
     width: 32%;
     height: auto;
-    margin:  13%;
+    margin:  12%;
     border-radius: 50%;
     box-shadow: 1px 1px 48px var(--c-orange);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -147,7 +147,7 @@ h1 {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .Pimagen {
     width: 100%;
